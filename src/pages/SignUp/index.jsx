@@ -9,7 +9,7 @@ import instagram from "../../assets/Instagram.png";
 import appleStore from "../../assets/AppleStore.png";
 import googlePlay from "../../assets/GooglePlay.png";
 
-// import api from "../../services/api";
+import api from "../../services/api";
 
 import {
   Page,
@@ -35,11 +35,11 @@ const SignUp = () => {
     name: yup
       .string()
       .required("Campo obrigatório!")
-      .matches(/^[a-zA-Z]+$/, "Preencher apenas com letras!"),
+      .matches(/^[a-zA-ZÀ-ú]+$/, "Preencher apenas com letras!"),
     username: yup
       .string()
       .required("Campo obrigatório!")
-      .matches(/^[a-zA-Z]+$/, "Preencher apenas com letras!"),
+      .matches(/^[a-zA-Z]+$/, "Preencher apenas com letras sem acentos!"),
     password: yup
       .string()
       .required("Campo obrigatório!")
@@ -56,29 +56,35 @@ const SignUp = () => {
     formState: { errors },
   } = useForm({ resolver: yupResolver(formSchema) });
 
-  // const history2 = useNavigate();
+  const history1 = useNavigate();
 
   const onSubmit = (data) => {
     console.log(data);
-    //   api
-    //     .post("/sessions", data)
-    //     .then((response) => {
-    //       const { token } = response.data;
+    api
+      .post("/register", data)
+      .then((response) => {
+        const { accessToken } = response.data;
+        console.log(response.data.accessToken);
 
-    //       localStorage.setItem("@Kenziehub:token", JSON.stringify(token));
-    //       localStorage.setItem("@Kenziehub:id", response.data.user.id);
+        localStorage.setItem("@Provi:token", JSON.stringify(accessToken));
+        // localStorage.setItem("@Kenziehub:id", response.data.user.id);
 
-    //       setAuthenticated(true);
+        // setAuthenticated(true);
 
-    //       toast.success("Login feito com sucesso!");
+        // toast.success("Login feito com sucesso!");
+        console.log("Login feito com sucesso!");
 
-    //       return history2.push("/dashboard");
-    //     })
-    //     .catch((err) =>
-    //       toast.error(
-    //         "Erro ao logar. Senha e/ou email incorretos ou erro de conexão."
-    //       )
-    //     );
+        history1("/");
+      })
+      .catch(
+        (_) =>
+          console.log(
+            "Erro ao logar. Senha e/ou email incorretos ou erro de conexão."
+          )
+        // toast.error(
+        //
+        // )
+      );
   };
 
   // if (authenticated) {
@@ -99,15 +105,19 @@ const SignUp = () => {
                 placeholder="Número de celular ou email"
                 {...register("email")}
               />
-              <Input placeholder="Nome completo" {...register("email")} />
-              {/* {errors.email && <Div>{errors.email.message}</Div>} */}
-              <Input placeholder="Nome de usuário" {...register("email")} />
+              <Input placeholder="Primeiro nome" {...register("name")} />
+              <Input placeholder="Nome de usuário" {...register("username")} />
               <Input
                 type="password"
                 placeholder="Senha"
                 {...register("password")}
               />
               <button type="submit">Cadastre-se</button>
+              {errors.email && <ErrorDiv>{errors.email.message}</ErrorDiv>}
+              {errors.name && <ErrorDiv>{errors.name.message}</ErrorDiv>}
+              {errors.username && (
+                <ErrorDiv>{errors.username.message}</ErrorDiv>
+              )}
               {errors.password && (
                 <ErrorDiv>{errors.password.message}</ErrorDiv>
               )}

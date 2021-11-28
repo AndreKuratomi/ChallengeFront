@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "linkToFind",
+  baseURL: "https://provi-json-server.herokuapp.com/",
 });
 
 export default api;

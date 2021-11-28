@@ -9,7 +9,7 @@ import instagram from "../../assets/Instagram.png";
 import appleStore from "../../assets/AppleStore.png";
 import googlePlay from "../../assets/GooglePlay.png";
 
-// import api from "../../services/api";
+import api from "../../services/api";
 
 import {
   Page,
@@ -49,29 +49,35 @@ const Login = () => {
     formState: { errors },
   } = useForm({ resolver: yupResolver(formSchema) });
 
-  // const history2 = useNavigate();
+  const history2 = useNavigate();
 
   const onSubmit = (data) => {
     console.log(data);
-    //   api
-    //     .post("/sessions", data)
-    //     .then((response) => {
-    //       const { token } = response.data;
+    api
+      .post("/login", data)
+      .then((response) => {
+        // const { token } = response.data;
+        // console.log(response);
 
-    //       localStorage.setItem("@Kenziehub:token", JSON.stringify(token));
-    //       localStorage.setItem("@Kenziehub:id", response.data.user.id);
+        // localStorage.getItem("@Provi:token", JSON.stringify(token));
+        // jwt
+        // localStorage.setItem("@Kenziehub:id", response.data.user.id);
 
-    //       setAuthenticated(true);
+        // setAuthenticated(true);
 
-    //       toast.success("Login feito com sucesso!");
+        // toast.success("Login feito com sucesso!");
 
-    //       return history2.push("/dashboard");
-    //     })
-    //     .catch((err) =>
-    //       toast.error(
-    //         "Erro ao logar. Senha e/ou email incorretos ou erro de conexão."
-    //       )
-    //     );
+        history2("/dashboard");
+      })
+      .catch(
+        (_) =>
+          console.log(
+            "Erro ao logar. Senha e/ou email incorretos ou erro de conexão."
+          )
+        // toast.error(
+
+        // )
+      );
   };
 
   // if (authenticated) {
