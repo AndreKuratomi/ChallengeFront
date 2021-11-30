@@ -1,32 +1,23 @@
 import { Link } from "react-router-dom";
 
-import DashHeader from "../../components/DashHeader";
-import SocialNet from "../../components/SocialNet";
-import FeedContent from "../../components/FeedContent";
-import Aside from "../../components/Aside";
+import ListSugestions from "../ListSugestions";
 
 import {
-  BodyContainer,
-  MainContainer,
-  Feeds,
-  Footer,
+  AsideFooter,
+  Asid,
+  PersonLogged,
+  //   ListSuggestions,
   Nav,
-  A,
   Section,
+  A,
 } from "./styles";
 
-const Dashboard = () => {
+const Aside = () => {
   return (
-    <BodyContainer>
-      <DashHeader />
-      <MainContainer>
-        <Feeds>
-          <SocialNet />
-          <FeedContent />
-        </Feeds>
-        <Aside />
-      </MainContainer>
-      <Footer>
+    <Asid>
+      <PersonLogged />
+      <ListSugestions />
+      <AsideFooter>
         <Nav>
           <A>
             <Link to="https://about.instagram.com/">Sobre</Link>
@@ -75,8 +66,8 @@ const Dashboard = () => {
           <A>Português (Brasil)</A>
           <A>&copy; 2021 INSTAGRAM FROM META</A>
         </Section>
-      </Footer>
-    </BodyContainer>
+      </AsideFooter>
+    </Asid>
   );
 };
-export default Dashboard;
+export default Aside;

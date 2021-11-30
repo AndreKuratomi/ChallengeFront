@@ -1,28 +1,26 @@
 import styled from "styled-components";
 
-export const BodyContainer = styled.body`
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-`;
-
-export const MainContainer = styled.main`
-  display: flex;
-  flex-direction: row;
-`;
-
-export const Feeds = styled.section`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const Footer = styled.footer`
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
+export const Asid = styled.aside`
+  display: none;
 
   @media screen and (min-width: 1024px) {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+  } ;
+`;
+
+export const PersonLogged = styled.section`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const AsideFooter = styled.footer`
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
   } ;
 `;
 

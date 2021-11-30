@@ -1,6 +1,7 @@
-#
+# Styles
 
 https://html-color.codes/image
+https://randomuser.me/photos
 
 # JSON-Server and JSON-Server-Auth:
 

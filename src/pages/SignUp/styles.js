@@ -32,24 +32,6 @@ export const LoginContainer = styled.div`
   margin-top: 1rem;
 `;
 
-export const ImageLogo = styled.img`
-  margin-bottom: 1rem;
-  width: 10rem;
-  /* @media screen and (min-width: 1024px) {
-  } ; */
-`;
-
-export const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const Input = styled.input`
-  margin-bottom: 0.5rem;
-  padding: 0.5rem;
-  text-align: left;
-`;
-
 export const Container = styled.div`
   border: 1px solid var(--light-gray);
   display: flex;
@@ -77,11 +59,6 @@ export const ContainerForAppLinks = styled.div`
 export const ImageLink = styled.img`
   margin: 0.2rem;
   width: 8rem;
-`;
-
-export const ErrorDiv = styled.div`
-  color: #f00;
-  margin-bottom: 0.5rem;
 `;
 
 export const Image = styled.figure`
@@ -125,7 +102,6 @@ export const A = styled.a`
   margin-right: 0.5rem;
 
   @media screen and (min-width: 1024px) {
-    margin-bottom: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
   } ;

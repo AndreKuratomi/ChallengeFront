@@ -1,29 +1,23 @@
-import * as yup from "yup";
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
+import { Link } from "react-router-dom";
 
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import FormLogin from "../../components/FormLogin";
+import InstagramTextLogo from "../../components/InstagramTextLogo";
 
 import loginInsta from "../../assets/LoginLandscape.jpeg";
-import instagram from "../../assets/Instagram.png";
+
 import appleStore from "../../assets/AppleStore.png";
 import googlePlay from "../../assets/GooglePlay.png";
-
-import api from "../../services/api";
 
 import {
   Page,
   SuperContainer,
   LoginContainer,
   Container,
-  ImageLogo,
+  SRegister,
   ContainerApps,
   ContainerForAppLinks,
-  Form,
-  Input,
   Image,
   Footer,
-  ErrorDiv,
   Nav,
   A,
   Section,
@@ -31,59 +25,6 @@ import {
 } from "./styles";
 
 const Login = () => {
-  const formSchema = yup.object().shape({
-    email: yup.string().email().required(""),
-    password: yup
-      .string()
-      .required("Campo obrigatório!")
-      .min(6, "Mínimo de 6 caracteres!")
-      .matches(
-        /^((?=.*[!@#$%^&*()\-_=+{};:,<.>?]){1})(?=.*\d)((?=.*[a-z]){1})((?=.*[A-Z]){1}).*$/,
-        "Sua senha está incorreta. Confira-a."
-      ),
-  });
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({ resolver: yupResolver(formSchema) });
-
-  const history2 = useNavigate();
-
-  const onSubmit = (data) => {
-    console.log(data);
-    api
-      .post("/login", data)
-      .then((response) => {
-        // const { token } = response.data;
-        // console.log(response);
-
-        // localStorage.getItem("@Provi:token", JSON.stringify(token));
-        // jwt
-        // localStorage.setItem("@Kenziehub:id", response.data.user.id);
-
-        // setAuthenticated(true);
-
-        // toast.success("Login feito com sucesso!");
-
-        history2("/dashboard");
-      })
-      .catch(
-        (_) =>
-          console.log(
-            "Erro ao logar. Senha e/ou email incorretos ou erro de conexão."
-          )
-        // toast.error(
-
-        // )
-      );
-  };
-
-  // if (authenticated) {
-  //   return <Navigate to="/dashboard" />;
-  // }
-
   return (
     <Page>
       <SuperContainer>
@@ -92,32 +33,15 @@ const Login = () => {
         </Image>
         <LoginContainer>
           <Container>
-            <ImageLogo src={instagram} alt="Instagram" />
-            <Form onSubmit={handleSubmit(onSubmit)}>
-              <Input
-                placeholder="Telefone, nome de usuaŕio ou email"
-                {...register("email")}
-              />
-              {/* {errors.email && <Div>{errors.email.message}</Div>} */}
-              <Input
-                type="password"
-                placeholder="Senha"
-                {...register("password")}
-              />
-              <button type="submit">Entrar</button>
-              <p>Ou</p>
-              <p>
-                <Link to="/">Entrar com Facebook</Link>
-              </p>
-              {errors.password && (
-                <ErrorDiv>{errors.password.message}</ErrorDiv>
-              )}
-            </Form>
+            <InstagramTextLogo />
+            <FormLogin />
           </Container>
           <Container>
             <p>
               Não tem conta?
-              <Link to="/signup"> Cadastre-se</Link>.
+              <Link to="/signup">
+                <span> Cadastre-se</span>
+              </Link>
             </p>
           </Container>
           <ContainerApps>
