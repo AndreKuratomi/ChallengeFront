@@ -20,6 +20,7 @@ export const Footer = styled.footer`
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+  max-width: 335px;
 
   @media screen and (min-width: 1024px) {
     display: none;

@@ -1,16 +1,8 @@
 import { Link } from "react-router-dom";
 
-import ListSugestions from "../ListSugestions";
+import ListSugestions from "../SugestionsList";
 
-import {
-  AsideFooter,
-  Asid,
-  PersonLogged,
-  //   ListSuggestions,
-  Nav,
-  Section,
-  A,
-} from "./styles";
+import { AsideFooter, Asid, PersonLogged, Nav, Section, A } from "./styles";
 
 const Aside = () => {
   return (

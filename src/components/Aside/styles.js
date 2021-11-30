@@ -6,7 +6,7 @@ export const Asid = styled.aside`
   @media screen and (min-width: 1024px) {
     display: flex;
     flex-direction: column;
-    padding-left: 2rem;
+    padding-left: 1rem;
   } ;
 `;
 

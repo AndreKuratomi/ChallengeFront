@@ -9,11 +9,11 @@ const SugestionCards = ({ elt, index }) => {
           <figcaption>{elt.name}</figcaption>
         </Figure>
         <Section>
-          <h4>{elt.name}</h4>
-          <p>Sugestões para você</p>
+          <h4>{elt.username}</h4>
+          <p>{elt.name}</p>
         </Section>
       </Container>
-      <button>Seguir</button>
+      <button onClick={}>Sair</button>
     </ListItem>
   );
 };

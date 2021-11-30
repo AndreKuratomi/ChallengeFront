@@ -1,19 +1,18 @@
-import { useState } from "react";
-
 import random_person1 from "./random_person1.jpg";
 import random_person2 from "./random_person2.jpg";
 import random_person3 from "./random_person3.jpg";
+
 import landscape1 from "./landscape1.jpeg";
 import landscape2 from "./landscape2.jpeg";
 import landscape3 from "./landscape3.jpeg";
+
 import random_candidate1 from "./random_candidate1.jpg";
 import random_candidate2 from "./random_candidate2.jpg";
 import random_candidate3 from "./random_candidate3.jpg";
 import random_candidate4 from "./random_candidate4.jpg";
 import random_candidate5 from "./random_candidate5.jpg";
 
-// export const [users, setUsers] = useState([
-export const users = [
+export const friends = [
   {
     name: "Josh",
     selfie: random_person1,

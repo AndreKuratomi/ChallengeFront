@@ -6,8 +6,19 @@ export const Container = styled.section`
   margin-bottom: 1rem;
 `;
 
-export const FeedHeader = styled.header`
+export const FeedContainer = styled.section`
   border: 1px solid #b6bbcb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin-bottom: 1rem; */
+
+  button {
+    margin: 0.5rem;
+  }
+`;
+
+export const FeedHeader = styled.header`
   display: flex;
   flex-direction: row;
   justify-content: left;

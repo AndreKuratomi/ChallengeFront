@@ -1,6 +1,6 @@
 import { Container, Figure } from "./styles";
 
-const SocialNetCards = ({ elt, index }) => {
+const FriendsCards = ({ elt, index }) => {
   return (
     <Container key={index}>
       <Figure>
@@ -11,4 +11,5 @@ const SocialNetCards = ({ elt, index }) => {
     </Container>
   );
 };
-export default SocialNetCards;
+
+export default FriendsCards;

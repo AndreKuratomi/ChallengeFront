@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 import DashHeader from "../../components/DashHeader";
-import SocialNet from "../../components/SocialNet";
-import FeedContent from "../../components/FeedContent";
+import FriendsNet from "../../components/FriendsNet";
+import FriendsContainers from "../../components/FriendsContainers";
 import Aside from "../../components/Aside";
 
 import {
@@ -21,8 +21,8 @@ const Dashboard = () => {
       <DashHeader />
       <MainContainer>
         <Feeds>
-          <SocialNet />
-          <FeedContent />
+          <FriendsNet />
+          <FriendsContainers />
         </Feeds>
         <Aside />
       </MainContainer>
