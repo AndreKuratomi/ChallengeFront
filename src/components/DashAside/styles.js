@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
-export const Asid = styled.aside`
+export const Aside = styled.aside`
   display: none;
 
   @media screen and (min-width: 1024px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-left: 1rem;
   } ;
 `;

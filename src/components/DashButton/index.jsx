@@ -1,15 +1,19 @@
-import { useUser } from "../../Providers/Users/users";
+import { useFriends } from "../../Providers/Friends/friends";
+import { useCandidates } from "../../Providers/Candidates/candidates";
 
-const DashButton = ({ one, type }) => {
-  const { addUser, removeFriend } = useUser();
+const DashButton = ({ elt, type }) => {
+  const { addFriend, removeFriend } = useFriends();
+  const { addCandidate, removeCandidate } = useCandidates();
 
   const text = type === "sugestionslist" ? "Seguir" : "Excluir amizade";
 
   const handleClick = () => {
     if (type === "sugestionslist") {
-      addUser(one);
+      addFriend(elt);
+      removeCandidate(elt);
     } else {
-      removeFriend(one);
+      removeFriend(elt);
+      addCandidate(elt);
     }
   };
 

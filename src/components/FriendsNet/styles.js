@@ -6,6 +6,7 @@ export const Section = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: left;
+  min-width: 480px;
   margin-bottom: 1rem;
 
   img {

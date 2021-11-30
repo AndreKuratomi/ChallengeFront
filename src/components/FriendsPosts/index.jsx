@@ -30,4 +30,5 @@ const FriendsPosts = ({ elt, index, type }) => {
     </Container>
   );
 };
+
 export default FriendsPosts;

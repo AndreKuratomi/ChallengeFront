@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 import ListSugestions from "../SugestionsList";
 
-import { AsideFooter, Asid, PersonLogged, Nav, Section, A } from "./styles";
+import { AsideFooter, Aside, PersonLogged, Nav, Section, A } from "./styles";
 
-const Aside = () => {
+const DashAside = () => {
   return (
-    <Asid>
+    <Aside>
       <PersonLogged />
       <ListSugestions />
       <AsideFooter>
@@ -59,7 +59,7 @@ const Aside = () => {
           <A>&copy; 2021 INSTAGRAM FROM META</A>
         </Section>
       </AsideFooter>
-    </Asid>
+    </Aside>
   );
 };
-export default Aside;
+export default DashAside;

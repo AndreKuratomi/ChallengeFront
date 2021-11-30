@@ -51,6 +51,8 @@ export const FeedItself = styled.figure`
 
   img {
     width: 30rem;
+    max-width: 70.5rem;
+    min-width: 706px;
   }
 
   @media screen and (min-width: 768px) {

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import DashHeader from "../../components/DashHeader";
 import FriendsNet from "../../components/FriendsNet";
 import FriendsContainers from "../../components/FriendsContainers";
-import Aside from "../../components/Aside";
+import DashAside from "../../components/DashAside";
 
 import {
   BodyContainer,
@@ -24,7 +24,7 @@ const Dashboard = () => {
           <FriendsNet />
           <FriendsContainers />
         </Feeds>
-        <Aside />
+        <DashAside />
       </MainContainer>
       <Footer>
         <Nav>

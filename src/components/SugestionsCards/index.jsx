@@ -4,8 +4,8 @@ import { ListItem, Container, Figure, Section } from "./styles";
 
 const SugestionsCards = ({ elt, index, type }) => {
   return (
-    <ListItem>
-      <Container key={index}>
+    <ListItem key={index}>
+      <Container>
         <Figure>
           <img src={elt.selfie} alt={elt.name} />
           <figcaption>{elt.name}</figcaption>

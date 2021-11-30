@@ -1,10 +1,14 @@
-import { friends, candidates } from "../../assets/users";
+import { useFriends } from "../../Providers/Friends/friends";
+import { useCandidates } from "../../Providers/Candidates/candidates";
 
 import FriendsCards from "../FriendsCards";
 import SugestionsCards from "../SugestionsCards";
 import FriendsPosts from "../FriendsPosts";
 
 const UsersList = ({ type }) => {
+  const { friends } = useFriends();
+  const { candidates } = useCandidates();
+
   return (
     <>
       {type === "socialnet" &&
@@ -20,4 +24,5 @@ const UsersList = ({ type }) => {
     </>
   );
 };
+
 export default UsersList;

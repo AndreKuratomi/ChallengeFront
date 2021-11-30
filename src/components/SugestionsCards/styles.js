@@ -14,6 +14,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: row;
   margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
 `;
 
 export const Figure = styled.figure`
