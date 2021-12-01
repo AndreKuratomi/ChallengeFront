@@ -3,14 +3,17 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import Providers from "../src/Providers";
+import { FriendsProvider } from "./Providers/Friends/friends";
+import { CandidatesProvider } from "./Providers/Candidates/candidates";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Providers>
-        <App />
-      </Providers>
+      <CandidatesProvider>
+        <FriendsProvider>
+          <App />
+        </FriendsProvider>
+      </CandidatesProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

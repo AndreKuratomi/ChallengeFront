@@ -11,6 +11,7 @@ export const FeedContainer = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* margin-bottom: 1rem; */
 
   button {
     margin: 0.5rem;
@@ -56,7 +57,7 @@ export const FeedItself = styled.figure`
 
   @media screen and (min-width: 768px) {
     img {
-      width: 48rem;
+      width: 45rem;
     }
   } ;
 `;

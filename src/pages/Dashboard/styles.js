@@ -3,19 +3,12 @@ import styled from "styled-components";
 export const BodyContainer = styled.body`
   display: flex;
   flex-direction: column;
-
-  @media screen and (min-width: 1024px) {
-    padding: 0 5rem;
-  } ;
+  padding: 1rem;
 `;
 
 export const MainContainer = styled.main`
   display: flex;
-  flex-direction: column;
-
-  @media screen and (min-width: 1024px) {
-    flex-direction: row;
-  } ;
+  flex-direction: row;
 `;
 
 export const Feeds = styled.section`
@@ -23,11 +16,11 @@ export const Feeds = styled.section`
   flex-direction: column;
 `;
 
-export const DashFooter = styled.footer`
+export const Footer = styled.footer`
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-  min-width: 270px;
+  max-width: 335px;
 
   @media screen and (min-width: 1024px) {
     display: none;
@@ -45,6 +38,7 @@ export const Nav = styled.nav`
   @media screen and (min-width: 1024px) {
     padding-left: 1rem;
     padding-right: 1rem;
+    /* justify-content: space-around; */
   } ;
 `;
 

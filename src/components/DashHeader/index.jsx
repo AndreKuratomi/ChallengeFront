@@ -1,16 +1,13 @@
-import { Link } from "react-router-dom";
 import InstagramTextLogo from "../InstagramTextLogo";
 
-import { Header, Input, Button } from "./styles";
+import { Header } from "./styles";
 
-const DashHeader = ({ logout }) => {
+const DashHeader = () => {
   return (
     <Header>
       <InstagramTextLogo />
-      <Input placeholder="Pesquisar" />
-      <Button onClick={logout}>
-        <Link to="/">Sair</Link>
-      </Button>
+      <input placeholder="Pesquisar" />
+      {/* <Icons /> */}
     </Header>
   );
 };

@@ -35,13 +35,13 @@ export const CandidatesProvider = ({ children }) => {
     {
       name: "Ynje",
       selfie: random_candidate4,
-      personalFeed: landscape2,
+      personalFeed: landscape3,
       postName: "some_landscape",
     },
     {
       name: "Eloa",
       selfie: random_candidate5,
-      personalFeed: landscape1,
+      personalFeed: landscape3,
       postName: "some_landscape",
     },
   ]);
@@ -56,7 +56,6 @@ export const CandidatesProvider = ({ children }) => {
     );
     setCandidates(newCandidatessList);
   };
-
   return (
     <CandidatesContext.Provider
       value={{

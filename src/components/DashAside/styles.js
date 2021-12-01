@@ -36,6 +36,7 @@ export const Nav = styled.nav`
   @media screen and (min-width: 1024px) {
     padding-left: 1rem;
     padding-right: 1rem;
+    /* justify-content: space-around; */
   } ;
 `;
 

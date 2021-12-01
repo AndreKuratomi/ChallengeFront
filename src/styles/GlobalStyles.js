@@ -23,10 +23,6 @@ export default createGlobalStyle`
         text-decoration: none;
     }
 
-    aside, footer, header {
-        min-width: 270px;
-    }
-
     button {
         background-color: var(--blue);
         border: none;
@@ -45,26 +41,21 @@ export default createGlobalStyle`
     figcaption {
         display: none;
     }
-
-    form {
-        max-width: 200px
-    }
     
-    header {
+    aside, header {
         background-color: var(--white);
-        min-width: 270px;
+        /* border: 1px solid #b6bbcb; */
     }
+
 
     html, body {
-        background-color: var(--dark-white);
-        min-width: 700px;
+        background-color: var(--dark-white)
     }
 
     input {
         margin-bottom: 0.5rem;
         padding: 0.5rem;
         text-align: left;
-        max-width: 200px;
     }
 
     /* span {

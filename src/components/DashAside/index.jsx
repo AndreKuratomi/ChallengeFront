@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 
-import SugestionsList from "../SugestionsList";
+import ListSugestions from "../SugestionsList";
 
-import { Aside, AsideFooter, PersonLogged, Nav, Section, A } from "./styles";
+import { AsideFooter, Aside, PersonLogged, Nav, Section, A } from "./styles";
 
 const DashAside = () => {
   return (
     <Aside>
       <PersonLogged />
-      <SugestionsList />
+      <ListSugestions />
       <AsideFooter>
         <Nav>
           <A>

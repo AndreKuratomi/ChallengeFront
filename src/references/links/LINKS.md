@@ -7,7 +7,3 @@ https://randomuser.me/photos
 
 https://github.com/typicode/json-server#module
 https://www.npmjs.com/package/json-server-auth
-
-# jwt-decode:
-
-https://www.npmjs.com/package/jwt-decode
