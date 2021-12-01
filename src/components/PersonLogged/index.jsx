@@ -17,4 +17,5 @@ const SugestionCards = ({ elt, index }) => {
     </ListItem>
   );
 };
+
 export default SugestionCards;

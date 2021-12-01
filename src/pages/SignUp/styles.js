@@ -41,9 +41,6 @@ export const Container = styled.div`
   align-items: center;
   margin-bottom: 1rem;
   padding: 1rem;
-
-  /* @media screen and (min-width: 1024px) {
-} ; */
 `;
 
 export const ContainerForAppLinks = styled.div`
@@ -53,7 +50,6 @@ export const ContainerForAppLinks = styled.div`
   text-align: center;
   align-items: center;
   padding: 1rem;
-  /* height: 100vh; */
 `;
 
 export const ImageLink = styled.img`
@@ -89,7 +85,6 @@ export const Nav = styled.nav`
   @media screen and (min-width: 1024px) {
     padding-left: 1rem;
     padding-right: 1rem;
-    /* justify-content: space-around; */
   } ;
 `;
 

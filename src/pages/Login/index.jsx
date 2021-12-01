@@ -13,7 +13,6 @@ import {
   SuperContainer,
   LoginContainer,
   Container,
-  SRegister,
   ContainerApps,
   ContainerForAppLinks,
   Image,

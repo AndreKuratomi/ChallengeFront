@@ -95,4 +95,5 @@ const Dashboard = () => {
     </BodyContainer>
   );
 };
+
 export default Dashboard;

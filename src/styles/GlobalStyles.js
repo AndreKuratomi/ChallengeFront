@@ -66,9 +66,4 @@ export default createGlobalStyle`
         text-align: left;
         max-width: 200px;
     }
-
-    /* span {
-        color: var(--light-blue);
-        font-weight: bold;
-    } */
 `;

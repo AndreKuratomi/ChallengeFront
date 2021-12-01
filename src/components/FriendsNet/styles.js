@@ -10,7 +10,6 @@ export const Section = styled.section`
   margin-bottom: 1rem;
 
   img {
-    /* border: 1rem solid transparent; */
     border-image: linear-gradient(yellow red blue);
     border-radius: 50%;
     width: 4.5rem;
