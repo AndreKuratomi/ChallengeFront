@@ -41,8 +41,12 @@ const SignUp = () => {
           </Container>
           <p>Obtenha o aplicativo</p>
           <ContainerForAppLinks>
-            <ImageLink src={appleStore} alt="AppleStore" />
-            <ImageLink src={googlePlay} alt="GooglePlay" />
+            <Link to="https://apps.apple.com/app/instagram/id389801252?vt=lo">
+              <ImageLink src={appleStore} alt="AppleStore" />
+            </Link>
+            <Link to="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb&utm_campaign=loginPage&ig_mid=3B78DE43-D3B6-4363-97F1-B47EDDE8102B&utm_content=lo&utm_medium=badge">
+              <ImageLink src={googlePlay} alt="GooglePlay" />
+            </Link>
           </ContainerForAppLinks>
         </LoginContainer>
         <Image>

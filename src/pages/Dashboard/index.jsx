@@ -1,24 +1,41 @@
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, Navigate } from "react-router-dom";
+
+import jwt_decode from "jwt-decode";
 
 import DashHeader from "../../components/DashHeader";
 import FriendsNet from "../../components/FriendsNet";
 import FriendsContainers from "../../components/FriendsContainers";
 import DashAside from "../../components/DashAside";
 
+import { useAuth } from "../../Providers/Auth/auth";
+
 import {
   BodyContainer,
   MainContainer,
   Feeds,
-  Footer,
+  DashFooter,
   Nav,
   A,
   Section,
 } from "./styles";
 
 const Dashboard = () => {
+  console.log("churros");
+  const { auth, setAuth } = useAuth();
+
+  if (!auth) {
+    return <Navigate to="/login" />;
+  }
+
+  const logout = () => {
+    localStorage.clear();
+    return setAuth(false);
+  };
+
   return (
     <BodyContainer>
-      <DashHeader />
+      <DashHeader logout={logout} />
       <MainContainer>
         <Feeds>
           <FriendsNet />
@@ -26,7 +43,7 @@ const Dashboard = () => {
         </Feeds>
         <DashAside />
       </MainContainer>
-      <Footer>
+      <DashFooter>
         <Nav>
           <A>
             <Link to="https://about.instagram.com/">Sobre</Link>
@@ -75,7 +92,7 @@ const Dashboard = () => {
           <A>Português (Brasil)</A>
           <A>&copy; 2021 INSTAGRAM FROM META</A>
         </Section>
-      </Footer>
+      </DashFooter>
     </BodyContainer>
   );
 };
