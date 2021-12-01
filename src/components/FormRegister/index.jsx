@@ -39,7 +39,6 @@ const FormRegister = () => {
   const history1 = useNavigate();
 
   const onSubmit = (data) => {
-    console.log(data);
     api
       .post("/register", data)
       .then((response) => {
