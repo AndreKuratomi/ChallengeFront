@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Link, Navigate } from "react-router-dom";
 
 import jwt_decode from "jwt-decode";
@@ -25,7 +24,7 @@ const Dashboard = () => {
   const { auth, setAuth } = useAuth();
 
   if (!auth) {
-    return <Navigate to="/login" />;
+    return <Navigate to="/" />;
   }
 
   const logout = () => {

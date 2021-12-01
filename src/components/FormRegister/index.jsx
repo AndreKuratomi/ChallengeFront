@@ -1,7 +1,7 @@
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../Providers/Auth/auth";
 import api from "../../services/api";
 import { toast } from "react-toastify";
@@ -74,4 +74,5 @@ const FormRegister = () => {
     </Form>
   );
 };
+
 export default FormRegister;
