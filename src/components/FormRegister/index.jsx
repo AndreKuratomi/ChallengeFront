@@ -1,27 +1,28 @@
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-
 import { Link, Navigate, useNavigate } from "react-router-dom";
-
+import { useAuth } from "../../Providers/Auth/auth";
 import api from "../../services/api";
-
+import { toast } from "react-toastify";
 import { Form, Input, ErrorDiv } from "./styles";
 
 const FormRegister = () => {
+  const { setAuth } = useAuth();
+
   const formSchema = yup.object().shape({
-    email: yup.string().email().required("Campo obrigatório!"),
+    email: yup.string().email().required("Email obrigatório!"),
     name: yup
       .string()
-      .required("Campo obrigatório!")
-      .matches(/^[a-zA-ZÀ-ú]+$/, "Preencher apenas com letras!"),
+      .required("Nome obrigatório!")
+      .matches(/^[a-zA-ZÀ-ú]+$/, "Preencher nome apenas com letras!"),
     username: yup
       .string()
-      .required("Campo obrigatório!")
-      .matches(/^[a-zA-Z]+$/, "Preencher apenas com letras sem acentos!"),
+      .required("Username obrigatório!")
+      .matches(/^[a-zA-ZÀ-ú]+$/, "Preencher username apenas com letras!"),
     password: yup
       .string()
-      .required("Campo obrigatório!")
+      .required("Senha obrigatória!")
       .min(6, "Mínimo de 6 caracteres!")
       .matches(
         /^((?=.*[!@#$%^&*()\-_=+{};:,<.>?]){1})(?=.*\d)((?=.*[a-z]){1})((?=.*[A-Z]){1}).*$/,
@@ -45,29 +46,19 @@ const FormRegister = () => {
         const { accessToken } = response.data;
 
         localStorage.setItem("@Provi:token", JSON.stringify(accessToken));
-        // localStorage.setItem("@Kenziehub:id", response.data.user.id);
 
-        // setAuthenticated(true);
+        setAuth(true);
 
-        // toast.success("Login feito com sucesso!");
-        console.log("Login feito com sucesso!");
+        toast.success("Cadastro feito com sucesso!");
 
         history1("/");
       })
-      .catch(
-        (_) =>
-          console.log(
-            "Erro ao logar. Senha e/ou email incorretos ou erro de conexão."
-          )
-        // toast.error(
-        //
-        // )
+      .catch((_) =>
+        toast.error(
+          "Erro ao cadastrar. Email já cadastrado ou falha na conexão."
+        )
       );
   };
-
-  // if (authenticated) {
-  //   return <Navigate to="/dashboard" />;
-  // }
 
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
