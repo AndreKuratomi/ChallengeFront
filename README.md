@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+## ChallengeFront
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Descrição](#descrição)
+- [Instalação](#instalação)
+- [Utilização](#utilização)
+- [Termos de uso](#termos-de-uso)
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+# Descrição
 
-### `yarn start`
+<p><b>ChallengeFront</b> é um serviço simples de busca de anagramas na língua portuguesa. O usuário clica no botão e a aplicação buscará por todos os conjuntos de 5 ou mais anagramas da língua portuguesa (ex: <strong>"aort": [ ator, atro, rato, rota, taro, toar, tora]</strong>). Esta aplicação utiliza HTML5, CSS3, DOM e a linguagem Javascript</p>
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p>Link vercel:</p>
+https://anagramas2.vercel.app/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Instalação
 
-### `yarn test`
+<h5>0. Primeiramente, é necessário já ter instalado na própria máquina:</h5>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Um <b>editor de código</b>, conhecido também como <b>IDE</b>. Por exemplo, o <b>[Visual Studio Code (VSCode)](https://code.visualstudio.com/)</b>.
 
-### `yarn build`
+- <p> E versionar o diretório para receber o clone da aplicação:</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+git init
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
+<h5>1. Fazer o clone do reposítório <span style="text-decoration: underline">Anagramas2</span> na sua máquina pelo terminal do computador ou pelo do IDE:</h5>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git clone git@gitlab.com:ABKURA/anagramas-2_2.git
+```
 
-### `yarn eject`
+<p>Entrar na pasta criada:</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+cd anagramas-2_2
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p>E rodar a aplicação:</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+code .
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<br>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Utilização
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<h3>Via VSCode:</h3>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p>Precisamos rodar a extensão do VSCode <b>Go live</b></p>
 
-### Analyzing the Bundle Size
+<p>A aplicação rodará no navegador automaticamente.</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<h3>Via Deploy Vercel:</h3>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p>Basta clicar no link abaixo:</p>
 
-### Advanced Configuration
+https://anagramas2.vercel.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
+# Termos de uso
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p>Esta aplicação atende a fins exclusivamente didáticos e não possui qualquer intuito comercial.</p>
