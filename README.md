@@ -9,7 +9,7 @@
 
 # Descrição
 
-<p><b>ChallengeFront</b> é um serviço simples de busca de anagramas na língua portuguesa. O usuário clica no botão e a aplicação buscará por todos os conjuntos de 5 ou mais anagramas da língua portuguesa (ex: <strong>"aort": [ ator, atro, rato, rota, taro, toar, tora]</strong>). Esta aplicação utiliza HTML5, CSS3, DOM e a linguagem Javascript</p>
+<p><b>ChallengeFront</b> é uma simulação de operações no Instagram, com cadastro, login e dashboard com a possibilidade de adicionar e excluir contatos.</p>
 <br>
 
 <p>Link vercel:</p>
@@ -31,14 +31,27 @@ git init
 <h5>1. Fazer o clone do reposítório <span style="text-decoration: underline">Anagramas2</span> na sua máquina pelo terminal do computador ou pelo do IDE:</h5>
 
 ```
-git clone git@gitlab.com:ABKURA/anagramas-2_2.git
+https://github.com/AndreKuratomi/challenge-front.git
 ```
 
 <p>Entrar na pasta criada:</p>
 
 ```
-cd anagramas-2_2
+cd chalenge-front
 ```
+
+<p>Instalar as dependências:</p>
+
+```
+yarn
+```
+
+<p><b>Obs:</b> caso não tenha o gerenciador de pacotes <b>yarn</b> instalar desta maneira:</p>
+
+```
+npm install --global yarn
+```
+
 
 <p>E rodar a aplicação:</p>
 
@@ -51,19 +64,11 @@ code .
 
 # Utilização
 
+<p>Para exibir o frontend para o usuário utlizando o VSCode utilizamos no terminal o seguinte comando:</p>
 
-<h3>Via VSCode:</h3>
-
-<p>Precisamos rodar a extensão do VSCode <b>Go live</b></p>
-
-<p>A aplicação rodará no navegador automaticamente.</p>
-
-
-<h3>Via Deploy Vercel:</h3>
-
-<p>Basta clicar no link abaixo:</p>
-
-https://anagramas2.vercel.app/
+```
+yarn start
+```
 
 
 
