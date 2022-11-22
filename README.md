@@ -12,8 +12,6 @@
 <p><b>ChallengeFront</b> é uma simulação de operações no Instagram, com cadastro, login e dashboard com a possibilidade de adicionar e excluir contatos.</p>
 <br>
 
-<p>Link vercel:</p>
-https://anagramas2.vercel.app/
 
 # Instalação
 
