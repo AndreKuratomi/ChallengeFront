@@ -17,7 +17,7 @@
 
 ## About
 
-The project <b>ChallengeFront</b> is a fullstack simulation of operations on <b>Instagram</b>, with user register, login and dashboard access with the possibility to join and unjoin contacts.
+The project <b>ChallengeFront</b> is a fullstack simulation of operations on <b>Instagram</b>, with user register, login and dashboard access with the possibility to join and unjoin contacts. Mobile responsive.
 
 This project uses the language <strong>[Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction)</strong> and its library <strong>[React](https://pt-br.legacy.reactjs.org/)</strong> .
 
