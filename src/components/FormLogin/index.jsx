@@ -31,7 +31,7 @@ const FormLogin = () => {
   const history2 = useNavigate();
 
   const onSubmit = (data) => {
-    console.log(data);
+  
     api
       .post("/login", data)
       .then((response) => {

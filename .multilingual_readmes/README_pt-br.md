@@ -91,6 +91,8 @@ code .
 yarn start
 ```
 
+Para as funcionalidades do projeto funcionarem a <b>fakeAPI</b> <strong>JSON-Server</strong> tem que estar com o servidor operando. Confira como [aqui](https://github.com/AndreKuratomi/ChallengeFront-FakeAPI).
+
 OBS: Por problemas legais com o uso do logo do Instagram e com uso dos métodos HTTP Post para cadastro e login o link vercel da aplicação foi inviabilizado pelo navegador. Logo só é possível rodar a aplicação localmente.
 
 <br>
@@ -104,6 +106,8 @@ OBS: Por problemas legais com o uso do logo do Instagram e com uso dos métodos 
 - [NVM](https://github.com/nvm-sh/nvm)
 - [Yarn](https://yarnpkg.com/)
 - [Visual Studio Code (VSCode)](https://code.visualstudio.com/)
+
+Obs: dentro do diretório 'src/' deste repositório existe uma pasta chamada <b>'references/</b>' que contém imagens e links usados para inspirar este humilde projecto.
 
 <br>
 

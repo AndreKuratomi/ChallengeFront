@@ -94,6 +94,8 @@ code .
 yarn start
 ```
 
+For the functionalities of this project work the <b>fakeAPI</b> <strong>JSON-Server</strong> needs to already have its server running. Check it out how [here](https://github.com/AndreKuratomi/ChallengeFront-FakeAPI).
+
 Obs: Because of Instagram's logo legal issues and the use of HTTP Post for register and login the application's vercel link is unabled to be used by the browser. So it is only possible to run the application by running it locally.
 
 <br>
@@ -107,6 +109,8 @@ Obs: Because of Instagram's logo legal issues and the use of HTTP Post for regis
 - [NVM](https://github.com/nvm-sh/nvm)
 - [Yarn](https://yarnpkg.com/)
 - [Visual Studio Code (VSCode)](https://code.visualstudio.com/)
+
+Obs: Inside the project's 'src/' directory there is a folder called <b>'references/</b>' that contain images and links used to inspire this rumble project.
 
 <br>
 

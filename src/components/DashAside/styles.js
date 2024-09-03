@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Aside = styled.aside`
-  display: none;
+  display: flex;
+  flex-direction: row;
 
   @media screen and (min-width: 1024px) {
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 1rem;
