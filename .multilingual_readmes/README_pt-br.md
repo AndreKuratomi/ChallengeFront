@@ -1,7 +1,7 @@
 # ChallengeFront
 
 - [Traduções](#traduções)
-- [Descrição](#descrição)
+- [Sobre](#sobre)
 - [Instalação](#instalação)
 - [Referências](#referências)
 - [Termos de uso](#termos-de-uso)
@@ -15,9 +15,9 @@
 
 <br>
 
-## Descrição
+## Sobre
 
-O projeto <b>ChallengeFront</b> é uma simulação fullstack de operações no <b>Instagram</b>, com cadastro, login e dashboard com a possibilidade de adicionar e excluir contatos.
+O projeto <b>ChallengeFront</b> é uma simulação fullstack de operações no <b>Instagram</b>, com cadastro, login e acesso ao dashboard com a possibilidade de adicionar e excluir contatos.
 A aplicação utiliza como frontend a linguagem <strong>[Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction)</strong> e sua biblioteca <strong>[React](https://pt-br.legacy.reactjs.org/)</strong> 
 
 O repositório backend utiliza a fakeAPI <strong>JSON-Server</strong> disponível [aqui](https://github.com/AndreKuratomi/ChallengeFront-FakeAPI).
