@@ -37,7 +37,7 @@ O repositório backend utiliza a fakeAPI <strong>JSON-Server</strong> disponíve
 
 - O gerenciador de pacotes <b>[Yarn](https://yarnpkg.com/)</b>.
 
-- Um <b>editor de código</b>, conhecido também como <b>IDE</b>. Por exemplo, o <b>[Visual Studio Code (VSCode)](https://code.visualstudio.com/)</b>.
+- Um <b>editor de código</b>, conhecido também como <b>IDE</b>. Por exemplo, o <b>[Visual Studio Code (VSCode)](https://code.visualstudio.com/)</b> que será usado aqui.
 
 - <p> E versionar o diretório escolhido para receber o clone da aplicação:</p>
 
