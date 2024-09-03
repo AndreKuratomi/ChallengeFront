@@ -110,7 +110,7 @@ Obs: Because of Instagram's logo legal issues and the use of HTTP Post for regis
 - [Yarn](https://yarnpkg.com/)
 - [Visual Studio Code (VSCode)](https://code.visualstudio.com/)
 
-Obs: Inside the project's 'src/' directory there is a folder called <b>'references/</b>' that contain images and links used to inspire this rumble project.
+Obs: Inside the project's 'src/' directory there is a folder called <b>'references/</b>' that contain images and links used to inspire this humble project.
 
 <br>
 
