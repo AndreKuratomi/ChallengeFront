@@ -1,78 +1,113 @@
 # ChallengeFront
 
-- [Descrição](#descrição)
-- [Instalação](#instalação)
-- [Utilização](#utilização)
-- [Termos de uso](#termos-de-uso)
+- [Translations](#translations)
+- [About](#about)
+- [Instalation](#instalation)
+- [References](#references)
+- [Terms of use](#terms-of-use)
 
 <br>
 
-## Descrição
+## Translations
 
-O projeto <b>ChallengeFront</b> é uma simulação fullstack de operações no <b>Instagram</b>, com cadastro, login e dashboard com a possibilidade de adicionar e excluir contatos.
-A aplicação utiliza como frontend a linguagem <strong>Javascript</strong> e sua biblioteca <strong>React</strong> 
+- [Português brasileiro](./README_pt-br.md)
+- [English / Inglês](https://github.com/AndreKuratomi/ChallengeFront/)
 
-O repositório backend utiliza a fakeAPI <strong>JSON-Server</strong> disponível [aqui](https://github.com/AndreKuratomi/ChallengeFront-FakeAPI).
+<br>
+
+## About
+
+The project <b>ChallengeFront</b> is a fullstack simulation of operations on <b>Instagram</b>, with user register, login and dashboard access with the possibility to join and unjoin contacts.
+
+Thi project uses the language <strong>[Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction)</strong> and its library <strong>[React](https://pt-br.legacy.reactjs.org/)</strong> .
+
+The backend repository uses the <b>fakeAPI</b> <strong>JSON-Server</strong> available [here](https://github.com/AndreKuratomi/ChallengeFront-FakeAPI).
 
 <br>
 
 
-## Instalação
+## Instalation
 
-<h5>0. Primeiramente, é necessário já ter instalado na própria máquina:</h5>
+<h3>0. It is first necessary to have instaled the following devices:</h3>
 
-- Um <b>editor de código</b>, conhecido também como <b>IDE</b>. Por exemplo, o <b>[Visual Studio Code (VSCode)](https://code.visualstudio.com/)</b>.
+- The code versioning <b>[Git](https://git-scm.com/downloads)</b>.
 
-- <p> E versionar o diretório para receber o clone da aplicação:</p>
+- The virtual environment <b>[Node](https://nodejs.org/pt)</b>.
+
+- Its version manager <b>[NVM](https://github.com/nvm-sh/nvm)</b>.
+
+- The package manager <b>[Yarn](https://yarnpkg.com/)</b>.
+
+- A <b>code editor</b>, also known as <b>IDE</b>. For instance, <strong>[Visual Studio Code (VSCode)](https://code.visualstudio.com/)</strong>.
+
+- <p>And versioning your directory to receive the aplication clone:</p>
+
 
 ```
 git init
 ```
 
 <br>
-<h5>1. Fazer o clone do reposítório <span style="text-decoration: underline">Anagramas2</span> na sua máquina pelo terminal do computador ou pelo do IDE:</h5>
+<h3>1. Clone the repository <b>ChallengeFront</b> by your machine terminal or by the IDE's:</h3>
 
 ```
-https://github.com/AndreKuratomi/challenge-front.git
+git clone https://github.com/AndreKuratomi/ChallengeFront.git
 ```
 
-<p>Entrar na pasta criada:</p>
+WINDOWS:
+
+Obs: In case of any mistake similar to this one: 
 
 ```
-cd chalenge-front
+unable to access 'https://github.com/AndreKuratomi/ChallengeFront.git/': SSL certificate problem: self-signed certificate in certificate chain
 ```
 
-<p>Instalar as dependências:</p>
+Configure git to disable SSL certification:
+
+```
+git config --global http.sslVerify "false"
+```
+
+<h3>2. After cloning the repository:</h3>
+
+
+<p>Enter the directory:</p>
+
+```
+cd ChallengeFront
+```
+<p>Install the project's dependencies:</p>
 
 ```
 yarn
 ```
 
-<p><b>Obs:</b> caso não tenha o gerenciador de pacotes <b>yarn</b> instalar desta maneira:</p>
-
-```
-npm install --global yarn
-```
-
-
-<p>E rodar a aplicação:</p>
+<p>Open the aplication with your IDE:</p>
 
 ```
 code .
 ```
 
-<br>
-
-
-## Utilização
-
-<p>Para exibir o frontend para o usuário utlizando o VSCode utilizamos no terminal o seguinte comando:</p>
+<p>And by the IDE's terminal run <b>yarn</b> to exibit the frontend:</p>
 
 ```
 yarn start
 ```
 
+<br>
 
-## Termos de uso
+## References
 
-<p>Esta aplicação atende a fins exclusivamente didáticos e não possui qualquer intuito comercial.</p>
+- [Git](https://git-scm.com/downloads)
+- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction)
+- [React](https://pt-br.legacy.reactjs.org/)
+- [Node](https://nodejs.org/pt)
+- [NVM](https://github.com/nvm-sh/nvm)
+- [Yarn](https://yarnpkg.com/)
+- [Visual Studio Code (VSCode)](https://code.visualstudio.com/)
+
+<br>
+
+## Terms of use
+
+This project is exclusively for didatic purposes and has no commercial intent.
