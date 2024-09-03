@@ -21,7 +21,7 @@ O projeto <b>ChallengeFront</b> é uma simulação fullstack de operações no <
 
 A aplicação utiliza como frontend a linguagem <strong>[Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction)</strong> e sua biblioteca <strong>[React](https://pt-br.legacy.reactjs.org/)</strong>.
 
-O repositório backend utiliza a fakeAPI <strong>JSON-Server</strong> disponível [aqui](https://github.com/AndreKuratomi/ChallengeFront-FakeAPI).
+O repositório backend utiliza a fakeAPI <strong>JSON-Server</strong> e está disponível [aqui](https://github.com/AndreKuratomi/ChallengeFront-FakeAPI).
 
 <br>
 
