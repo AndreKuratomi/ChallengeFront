@@ -38,7 +38,7 @@ The backend repository uses the <b>fakeAPI</b> <strong>JSON-Server</strong> avai
 
 - The package manager <b>[Yarn](https://yarnpkg.com/)</b>.
 
-- A <b>code editor</b>, also known as <b>IDE</b>. For instance, <strong>[Visual Studio Code (VSCode)](https://code.visualstudio.com/)</strong>.
+- A <b>code editor</b>, also known as <b>IDE</b>. For instance, <strong>[Visual Studio Code (VSCode)](https://code.visualstudio.com/)</strong> that is going to be used here.
 
 - <p>And versioning your directory to receive the aplication clone:</p>
 
