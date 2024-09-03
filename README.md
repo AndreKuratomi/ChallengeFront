@@ -1,4 +1,4 @@
-## ChallengeFront
+# ChallengeFront
 
 - [Descrição](#descrição)
 - [Instalação](#instalação)
@@ -7,18 +7,17 @@
 
 <br>
 
-# Descrição
+## Descrição
 
-<b>ChallengeFront</b> é uma simulação fullstack de operações no <b>Instagram</b>, com cadastro, login e dashboard com a possibilidade de adicionar e excluir contatos.
+O projeto <b>ChallengeFront</b> é uma simulação fullstack de operações no <b>Instagram</b>, com cadastro, login e dashboard com a possibilidade de adicionar e excluir contatos.
+A aplicação utiliza como frontend a linguagem <strong>Javascript</strong> e sua biblioteca <strong>React</strong> 
 
-A aplicação utiliza como backend a fakeAPI <strong>JSON-Server</strong> disponível no link abaixo:
-
-https://github.com/AndreKuratomi/challenge-json-server
+O repositório backend utiliza a fakeAPI <strong>JSON-Server</strong> disponível [aqui](https://github.com/AndreKuratomi/ChallengeFront-FakeAPI).
 
 <br>
 
 
-# Instalação
+## Instalação
 
 <h5>0. Primeiramente, é necessário já ter instalado na própria máquina:</h5>
 
@@ -65,7 +64,7 @@ code .
 <br>
 
 
-# Utilização
+## Utilização
 
 <p>Para exibir o frontend para o usuário utlizando o VSCode utilizamos no terminal o seguinte comando:</p>
 
@@ -74,8 +73,6 @@ yarn start
 ```
 
 
-
-
-# Termos de uso
+## Termos de uso
 
 <p>Esta aplicação atende a fins exclusivamente didáticos e não possui qualquer intuito comercial.</p>
