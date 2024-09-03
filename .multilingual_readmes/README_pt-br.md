@@ -27,7 +27,7 @@ O repositório backend utiliza a fakeAPI <strong>JSON-Server</strong> disponíve
 
 ## Instalação
 
-<h5>0. Primeiramente, é necessário já ter instalado na própria máquina:</h5>
+<h3>0. Primeiramente, é necessário já ter instalado na própria máquina:</h3>
 
 - O versionador de codigo <b>[Git](https://git-scm.com/downloads)</b>.
 
@@ -47,7 +47,7 @@ git init
 ```
 
 <br>
-<h5>1. Fazer o clone do repositório <b>ChallengeFront</b> na sua máquina pelo terminal do computador ou pelo do IDE:</h5>
+<h3>1. Fazer o clone do repositório <b>ChallengeFront</b> na sua máquina pelo terminal do computador ou pelo do IDE:</h3>
 
 ```
 https://github.com/AndreKuratomi/ChallengeFront.git
