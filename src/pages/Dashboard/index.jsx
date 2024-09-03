@@ -20,7 +20,7 @@ import {
 } from "./styles";
 
 const Dashboard = () => {
-  console.log("churros");
+
   const { auth, setAuth } = useAuth();
 
   if (!auth) {
