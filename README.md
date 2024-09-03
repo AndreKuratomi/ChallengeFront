@@ -10,7 +10,7 @@
 
 ## Translations
 
-- [Português brasileiro](./README_pt-br.md)
+- [Português brasileiro](./.multilingual_readmes/README_pt-br.md)
 - [English / Inglês](https://github.com/AndreKuratomi/ChallengeFront/)
 
 <br>
@@ -93,6 +93,8 @@ code .
 ```
 yarn start
 ```
+
+Obs: Because of Instagram's logo legal issues and the use of HTTP Post for register and login the application's vercel link is unabled to be used by the browser. So it is only possible to run the application by running it locally.
 
 <br>
 
