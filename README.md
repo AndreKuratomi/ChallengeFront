@@ -9,7 +9,12 @@
 
 # Descrição
 
-<p><b>ChallengeFront</b> é uma simulação de operações no Instagram, com cadastro, login e dashboard com a possibilidade de adicionar e excluir contatos.</p>
+<b>ChallengeFront</b> é uma simulação fullstack de operações no <b>Instagram</b>, com cadastro, login e dashboard com a possibilidade de adicionar e excluir contatos.
+
+A aplicação utiliza como backend a fakeAPI <strong>JSON-Server</strong> disponível no link abaixo:
+
+https://github.com/AndreKuratomi/challenge-json-server
+
 <br>
 
 
