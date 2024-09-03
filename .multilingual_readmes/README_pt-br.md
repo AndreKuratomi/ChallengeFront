@@ -91,6 +91,8 @@ code .
 yarn start
 ```
 
+OBS: Por problemas legais com o uso do logo do Instagram e com uso dos métodos HTTP Post para cadastro e login o link vercel da aplicação foi inviabilizado pelo navegador. Logo só é possível rodar a aplicação localmente.
+
 <br>
 
 ## Referências
