@@ -19,7 +19,7 @@
 
 The project <b>ChallengeFront</b> is a fullstack simulation of operations on <b>Instagram</b>, with user register, login and dashboard access with the possibility to join and unjoin contacts.
 
-Thi project uses the language <strong>[Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction)</strong> and its library <strong>[React](https://pt-br.legacy.reactjs.org/)</strong> .
+This project uses the language <strong>[Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction)</strong> and its library <strong>[React](https://pt-br.legacy.reactjs.org/)</strong> .
 
 The backend repository uses the <b>fakeAPI</b> <strong>JSON-Server</strong> available [here](https://github.com/AndreKuratomi/ChallengeFront-FakeAPI).
 
