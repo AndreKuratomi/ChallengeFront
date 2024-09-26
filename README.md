@@ -23,6 +23,9 @@ This project uses the language <strong>[Javascript](https://developer.mozilla.or
 
 The backend repository uses the <b>fakeAPI</b> <strong>JSON-Server</strong> available [here](https://github.com/AndreKuratomi/ChallengeFront-FakeAPI).
 
+Check out how the application behaves in this <b>[link](https://drive.google.com/file/d/1HejJXwH4-K4otlNum1nPzuMoX-BCZQ-M/view?usp=sharing)</b>.
+
+
 <br>
 
 
@@ -32,7 +35,7 @@ The backend repository uses the <b>fakeAPI</b> <strong>JSON-Server</strong> avai
 
 - The code versioning <b>[Git](https://git-scm.com/downloads)</b>.
 
-- The virtual environment <b>[Node](https://nodejs.org/pt)</b>.
+- The virtual environment <b>[Node](https://nodejs.org/pt)</b>. Version 16th used.
 
 - Its version manager <b>[NVM](https://github.com/nvm-sh/nvm)</b>.
 

@@ -23,6 +23,8 @@ A aplicação utiliza como frontend a linguagem <strong>[Javascript](https://dev
 
 O repositório backend utiliza a fakeAPI <strong>JSON-Server</strong> e está disponível [aqui](https://github.com/AndreKuratomi/ChallengeFront-FakeAPI).
 
+Confira como a aplicação funciona neste <b>[link](https://drive.google.com/file/d/1HejJXwH4-K4otlNum1nPzuMoX-BCZQ-M/view?usp=sharing)</b>.
+
 <br>
 
 
@@ -32,7 +34,7 @@ O repositório backend utiliza a fakeAPI <strong>JSON-Server</strong> e está di
 
 - O versionador de codigo <b>[Git](https://git-scm.com/downloads)</b>.
 
-- O ambiente de desenvolvimento <b>[Node](https://nodejs.org/pt)</b>.
+- O ambiente de desenvolvimento <b>[Node](https://nodejs.org/pt)</b>. Usada versão 16.
 
 - Seu gerenciador de versões <b>[NVM](https://github.com/nvm-sh/nvm)</b>.
 
